@@ -1,0 +1,14 @@
+% rebase('osnova.html')
+
+<h1><a href="/">Evrovizija </a></h1>
+<div class="has-text-centered">
+<h2> Izvajalci, ki ustrezajo tvojemu iskalnemu nizu: "{{iskalni_niz}}" </h2>
+<ol type"1">
+% for ime_izvajalca in izvajalec:
+    <li>
+    <p class="is-italic has-text-black">
+         {{ime_izvajalca}} </p>
+    </li>
+% end
+</ol>
+</div>

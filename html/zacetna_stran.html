@@ -1,0 +1,76 @@
+% rebase('osnova.html')
+<div class="has-text-centered">
+<section class = "hero">
+    <div class = "hero-body">
+    </div>
+        <div class="content is-medium">
+        <div class="container">
+         <h1 class="title has-text-centered">
+          Evrovizija
+          </h1>
+          <h2 class="subtitle has-text-centered">
+          pregled evrovizijskih pesmi
+          </h2>
+        </div>
+    </div>
+</section>
+<form action="/isci/">
+<div class="field">
+  <label class="label has-text-centered">Išči izvajalca</label>
+  <div class="control">
+    <input class="input is-rounded is-link has-text-centered" type="text" placeholder="npr. Lea Sirk" name="iskalni_niz">
+  </div>
+</div>
+
+  <div class="field">
+  <div class="control">
+  <div class="buttons is-centered">
+    <button class="button is-info is-centered">Išči!</button>
+  </div>
+  </div>
+
+</form>
+<form action="/seznam/">
+<div class="field">
+  <label class="label has-text-centered">Seznam držav</label>
+  <div class="control">
+    <input class="input is-rounded is-link has-text-centered" type="text" placeholder="npr. 2015" name="katero_leto">
+  </div>
+</div>
+
+  <div class="field">
+  <div class="control">
+  <div class="buttons is-centered">
+    <button class="button is-info">Poglej!</button>
+  </div>
+  </div>
+
+</form>
+<form action="/preglej/">
+<div class="field">
+  <label class="label has-text-centered">Vnesi državo</label>
+  <div class="control">
+    <input class="input is-rounded is-link has-text-centered" type="text" placeholder="npr. Slovenia" name="ime">
+  </div>
+</div>
+
+  <div class="field">
+  <div class="control">
+  <div class="buttons is-centered">
+    <button class="button is-info">Poišči!</button>
+  </div>
+  </div>
+
+</form>
+
+<ul>
+<h3> Najboljše pesmi v izbranem letu </h3>
+% for leto in leta:
+    <li>
+        Najboljše pesmi v letu
+        <a href="/najboljse/{{leto}}/"> {{leto}} </a>
+    </li>
+% end
+</ul>
+</div>
+</div>

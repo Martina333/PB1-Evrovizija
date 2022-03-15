@@ -1,0 +1,19 @@
+% rebase('osnova.html')
+<div class="has-background-success-lighter">
+<h1><a href="/">Evrovizija </a></h1>
+<div class="has-text-centered">
+<h2> Podatki o izbrani državi "{{ime}}" </h2>
+<ol type="1">
+% for leto, ime_izvajalca, naslov_pesmi, mesto, tocke_v_finalu in nekaj:
+    <li>
+        <br><b> leto:</b> {{leto}} </br>
+        <br><b> izvajalec:</b> {{ime_izvajalca}} </br>
+        <br> <b>naslov pesmi:</b> {{naslov_pesmi}} </br>
+        <br>  <b> mesto: </b>{{mesto}}. </br>
+        <br><b>točke v finalu:</b> {{tocke_v_finalu}} </br>
+        <hr style="height:2px; width:100%; border-width:0; color:black; background-color:black"> </hr>
+    </li>
+% end
+</ol>
+</div>
+</div>

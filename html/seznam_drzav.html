@@ -1,0 +1,19 @@
+% rebase('osnova.html')
+<div class="has-background-grey-lighter">
+<h1><a href="/">Evrovizija </a></h1>
+<h2>
+<div class="has-text-centered">
+Seznam sodelujočih držav v letu {{katero_leto}}
+</div>
+</h2>
+<div class="has-text-centered">
+<ol type"1"="has-text-centered">
+% for ime_drzave in drzava:
+    <li>
+        <p class="is-italic has-text-black has-text-centered">
+            {{*ime_drzave}}</p>
+    </li>
+% end
+</ol>
+</div>
+</div>
