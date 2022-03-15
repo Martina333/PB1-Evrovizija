@@ -228,40 +228,6 @@ class Glasovanje(Tabela):
         return super().dodaj_vrstico(**podatki)
 
 
-# class Izvaja(Tabela):
-#     """
-#     Tabela za relacijo med izvajalcem in pesmijo.
-#     """
-#     ime = "izvaja"
-#     #podatki = "izvajalec.csv"
-# 
-#     def __init__(self, conn, Izvajalec):
-#         """
-#         Konstruktor tabele pripadnosti izvajalec-pesem.
-#         Argumenti:
-#         - conn: povezava na bazo
-#         - Izvajalec: tabela vseh izvajalcev
-#         """
-#         super().__init__(conn)
-#         self.izvajalec = Izvajalec
-# 
-#     def ustvari(self):
-#         """
-#         Ustvari tabelo IZVAJA.
-#         """
-#         self.conn.execute("""
-#             CREATE TABLE IZVAJA (
-#                 IZVAJALEC TEXT REFERENCES IZVAJALEC(ime_drzave),
-#                 PESEM TEXT REFERENCES PESEM(ime_drzave)
-#             );
-#         """)
-#     def dodaj_vrstico(self, **podatki):
-#         """
-#         Dodaj pripadnost lokacije in pripadajoce vrste.
-#         Argumenti:
-#         - podatki: slovar s podatki o pripadnosti
-#         """
-#         return super().dodaj_vrstico(**podatki)
 
 
 def ustvari_tabele(tabele):
@@ -315,7 +281,7 @@ def pripravi_tabele(conn):
     tekmovanje = Tekmovanje(conn)
     izvajalec = Izvajalec(conn)
     glasovanje = Glasovanje(conn)
-    #izvaja = Izvaja(conn, izvajalec)
+  
 
     return [drzava, izvajalec, tekmovanje, pesem, glasovanje]
 
