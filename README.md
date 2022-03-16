@@ -6,4 +6,5 @@ Podatke pridobivava s spletne strani: https://github.com/Spijkervet/eurovision_d
 V najinem spletnem vmesniku lahko vsak pregleda vse izvajalce, ki so kadarkoli nastopali na tekmovanju. Prav tako glede na vnešeno leto lahko pogleda seznam vseh nastopajočih držav. Da se tudi pogledati vse podatke o vnešeni državi (leto nastopa, ime izvajalcev, , naslov pesmi, zasedeno mesto in točke v finalu). Za konec pa lahko uporabnik uživa v 5 najboljših pesmi iz izbranega leta, saj ga povezava vodi do youtuba. V tabeli so tako shranjeni tudi naslovi pesmi, imena izvajalcev, zasedeno mesto ter točke v finalu.
 
 
-![diagram](https://user-images.githubusercontent.com/58221828/158525155-22a56899-90c0-4553-8271-a0451169cf29.png)
+
+![Diagram](https://user-images.githubusercontent.com/58221828/158525310-b13d6bfa-cda1-49e9-adce-b652ffeee4cb.png)
